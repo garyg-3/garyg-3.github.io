@@ -1,0 +1,29 @@
+.backdrop {
+    margin: 0;
+    text-align: center;
+    height: 100vh;
+    background-image: radial-gradient(circle at center, var(--color-dark-blue) 55%, var(--color-white) 400%);
+    display: grid;
+    place-content: center;
+}
+
+.backdrop__text-box {
+    color: #ebf0f6;
+    animation: moveInLeft 1s ease-out;
+    animation-fill-mode: backwards;
+}
+
+.backdrop__link {
+    color: white;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
