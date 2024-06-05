@@ -2,19 +2,38 @@
     margin: 0;
     text-align: center;
     height: 100vh;
-    background-image: radial-gradient(circle at center, var(--color-dark-blue) 55%, var(--color-white) 400%);
-    display: grid;
-    place-content: center;
+    background-image: radial-gradient(
+        circle at center,
+        var(--color-dark-blue) 55%,
+        var(--color-white) 400%
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .backdrop__text-box {
     color: #ebf0f6;
     animation: moveInLeft 1s ease-out;
     animation-fill-mode: backwards;
+    width: 75%;
 }
 
 .backdrop__link {
-    color: white;
+    padding: 0.5rem 1rem;
+    display: block;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #132238;
+    background-color: white;
+    width: max-content;
+}
+
+.backdrop__link:hover {
+    background-color: aliceblue;
+    color: black;
+    box-shadow: 0 0 5px white;
 }
 
 @keyframes moveInLeft {
