@@ -3,64 +3,102 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="/backdrop.css">
+    <meta name="description" content="Play fun and challenging games. Explore educational apps.">
+    <meta property="og:title" content="Subzero Games - Online Games and Educational Apps">
+    <meta property="og:description"
+        content="Play fun and challenging games like Lights Out, Ultimate Tic-Tac-Toe, and Connect 2. Explore educational apps for visualizing differential equations and pathfinding algorithms.">
+    <!-- <meta property="og:image" content="to add"> -->
+    <meta property="og:url" content="https://www.subzerogames.co.uk">
+    <meta name="twitter:title" content="Subzero Games - Online Games and Educational Apps">
+    <meta name="twitter:description"
+        content="Play fun and challenging games like Lights Out, Ultimate Tic-Tac-Toe, and Connect 2. Explore educational apps for visualizing differential equations and pathfinding algorithms.">
+    <!-- <meta name="twitter:image" content="to add"> -->
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Subzero Games - Online Games and Educational Apps</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/backdrop.css">
 </head>
 
 <body>
     <div class="backdrop">
-        <div class="backdrop__text-box">
-            <h1 class="heading--main">Subzero Games</h1>
-            <div class="menu">
-                <div class="menu__section">
-                    <h2>Apps</h2>
-                    <div class="menu__list">
-
-                        <div class="menu__item">
-                            <h3 class="menu__item-heading">Differential equation trajectories</h3>
-                            <div class="menu__item-details">
-                                <p class="menu__item-description">Visualize trajectories of the solutions to a
-                                    differential equations of the form dy/dx
-                                    = (ax+by)/(cx+dy)</p>
-                                <a class="backdrop__link"
-                                    href="https://subzerogames.co.uk/differential-equation-plotter">Open
-                                    app</a>
+        <main class="main-content">
+            <header class="header">
+                <img src="/assets/subzero-games.png" alt="Subzero Games logo" class="header-logo" width="175"
+                    height="175" />
+                <h1 class="title">Subzero Games</h1>
+            </header>
+            <h2 class="sub-title">Play Fun Games & Educational Apps</h2>
+            <div class="content-wrapper">
+                <section class="section games">
+                    <h2 class="section-title">Games</h2>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Lights Out</h3>
+                                <img src="/assets/controller.svg" alt="Game controller" class="card-icon" height="35"
+                                    width="35">
                             </div>
+                            <p class="card-description">Try and get all of the lights out in this fun puzzle game.</p>
+                            <a class="card-button" href="https://lights-out.subzerogames.co.uk"
+                                title="Play Lights Out Puzzle Game">Open Game</a>
                         </div>
-                        <div class="menu__item">
-                            <h3 class="menu__item-heading">Path finding visualization</h3>
-                            <div class="menu__item-details">
-                                <p class="menu__item-description">Explore path finding algorithms with a visual display
-                                    of how the path is calculated.
-                                </p>
-                                <a class="backdrop__link"
-                                    href="https://subzerogames.co.uk/pathfinding-visualization">Open
-                                    app</a>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Ultimate Tic-Tac-Toe</h3>
+                                <img src="/assets/controller.svg" alt="Game controller" class="card-icon" height="35"
+                                    width="35">
                             </div>
+                            <p class="card-description">So you're familiar with the original 3 in a row game? Let's take
+                                it to the next level.</p>
+                            <button class="card-button" disabled>Coming soon</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Connect 2</h3>
+                                <img src="/assets/controller.svg" alt="Game controller" class="card-icon" height="35"
+                                    width="35">
+                            </div>
+                            <p class="card-description">Remove all blocks by connecting similar blocks.</p>
+                            <button class="card-button" disabled>Coming soon</button>
                         </div>
                     </div>
-                </div>
-                <div class="menu__section">
-                    <h2>Games</h2>
-                    <div class="menu__list">
-
-                        <div class="menu__item">
-                            <h3 class="menu__item-heading">Lights out</h3>
-                            <div class="menu__item-details">
-                                <p class="menu__item-description">Try and get all of the lights out in this fun puzzle
-                                    game.</p>
-                                <a class="backdrop__link" href="https://lights-out.subzerogames.co.uk">Open game</a>
+                </section>
+                <section class="section apps">
+                    <h2 class="section-title">Apps</h2>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Differential Equation Trajectories</h3>
+                                <img src="/assets/app.svg" alt="Game controller" class="card-icon" height="35"
+                                    width="35">
                             </div>
+                            <p class="card-description">Visualize trajectories of the solutions to a differential
+                                equation.</p>
+                            <!-- <img src="/images/ccode-demo.gif" alt="" class=""> -->
+                            <a class="card-button" href="https://subzerogames.co.uk/differential-equation-plotter">Open
+                                App</a>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Path Finding Visualization</h3>
+                                <img src="/assets/app.svg" alt="Game controller" class="card-icon" height="35"
+                                    width="35">
+                            </div>
+                            <p class="card-description">Explore path finding algorithms with a visual display of how the
+                                path is calculated.</p>
+                            <a class="card-button" href="https://subzerogames.co.uk/pathfinding-visualization">Open
+                                App</a>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
-        </div>
-    </div>
+        </main>
     </div>
 </body>
 
